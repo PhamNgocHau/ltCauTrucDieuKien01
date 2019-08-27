@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let hoaHong;
+    let doanhSo = parseInt(prompt("Nhap Doanh So: "));
+    if(doanhSo <= 100){
+        hoaHong = (doanhSo*5)/100;
+    }else if(doanhSo <= 300){
+        hoaHong = (doanhSo*10)/100;
+    }else if(doanhSo > 300){
+        hoaHong = (doanhSo*20)/100;
+    }
+    document.write("Doanh Số: " + doanhSo + "tr"+"<br>"+" Hoa hồng là: " + hoaHong +"%");
+</script>
+</body>
+</html>

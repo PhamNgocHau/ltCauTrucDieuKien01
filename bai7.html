@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phi = 25000;
+    let soPhut = parseInt(prompt("Nhập số phút đã sử dụng: "));
+    if (soPhut <= 50) {
+        phi = (soPhut * 600) + phi ;
+    } else if (soPhut <=200) {
+        phi = (soPhut - 50)*400+ 50*600 + phi;
+    } else {
+        phi=(soPhut-200)*200+ 50*600+150*400+phi;
+    }
+    document.write("Phí phải trả là: " + phi + "vnd");
+</script>
+</body>
+</html>
